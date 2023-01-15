@@ -4,23 +4,23 @@
       <div
         class="sticky-top bg-gray-100 dark:bg-darkBgSec w-full h-[60px] shadow-sm p-4 flex justify-between items-center"
       >
-        <NuxtLink to="/" class="title">
-          Conversar
-          <!-- <img
-            v-lazy="
-              'https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w_gdg5d5.svg'
+        <NuxtLink to="/">
+          <img
+            src="
+              https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w_gdg5d5.svg
             "
             alt="logo"
             class="w-[50px] object-contain"
-            
+            v-if="$colorMode.value === 'dark'"
           />
           <img
-            v-lazy="
-              'https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg'
+            v-else
+            src="
+              https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg
             "
             alt="logo"
             class="w-[50px] object-contain"
-          /> -->
+          />
         </NuxtLink>
       </div>
       <div class="h-screen md:h-[calc(100vh-60px)] py-6 px-4 overflow-y-auto">
