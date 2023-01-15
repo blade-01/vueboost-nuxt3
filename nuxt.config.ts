@@ -18,6 +18,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+  plugins: ['~/plugins/apexchart.client.ts', '~/plugins/vuequill.client.ts'],
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
