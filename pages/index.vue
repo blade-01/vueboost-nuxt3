@@ -1,13 +1,8 @@
 <template>
-  <div>
-    <h1 class="title">Welcome to Conversar</h1>
-  </div>
+  <NavbarTheHeader />
+  <HomeCTA />
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

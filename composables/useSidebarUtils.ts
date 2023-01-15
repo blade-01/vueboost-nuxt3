@@ -51,29 +51,25 @@ export default () => {
           name: 'Button',
           icon: 'gesture-tap-button',
           show: false,
-          route: '/'
-          // route: '/dashboard/button'
+          route: '/dashboard/button'
         },
         {
           name: 'Forms',
           icon: 'form-select',
           show: false,
-          route: '/'
-          // route: '/dashboard/form'
+          route: '/dashboard/form'
         },
         {
           name: 'Modal',
           icon: 'card',
           show: false,
-          route: '/'
-          // route: '/dashboard/modal'
+          route: '/dashboard/modal'
         },
         {
           name: 'Table',
           icon: 'table',
           show: false,
-          route: '/'
-          // route: '/dashboard/table'
+          route: '/dashboard/table'
         }
       ]
     }

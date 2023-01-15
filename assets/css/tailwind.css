@@ -155,9 +155,9 @@
   }
 
   /* ICONS */
-  /* .icon {
+  .icon-style {
     @apply border rounded-full h-[30px] w-[30px] text-base flex justify-center items-center font-semibold transition-all ease-in-out duration-200 cursor-pointer;
-  } */
+  }
 
   /* BUTTON */
   .btn {

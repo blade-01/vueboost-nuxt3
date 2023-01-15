@@ -16,43 +16,43 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-0.5">
     <div class="chart-bar">
       <p class="chart-title">Bar Chart</p>
-      <apexchart
+      <VueApexCharts
         type="bar"
         :options="barChartOptions"
         :series="barChartSeries"
-      ></apexchart>
+      ></VueApexCharts>
     </div>
     <div class="chart-bar">
       <p class="chart-title">Area Chart</p>
-      <apexchart
+      <VueApexCharts
         type="area"
         :options="areaChartOptions"
         :series="areaChartSeries"
-      ></apexchart>
+      ></VueApexCharts>
     </div>
     <div class="chart-bar">
       <p class="chart-title">Polar Chart</p>
-      <apexchart
+      <VueApexCharts
         type="polarArea"
         :options="polarChartOptions"
         :series="polarChartSeries"
-      ></apexchart>
+      ></VueApexCharts>
     </div>
     <div class="chart-bar">
       <p class="chart-title">Radial Chart</p>
-      <apexchart
+      <VueApexCharts
         type="radialBar"
         :options="radialOptions"
         :series="radialSeries"
-      ></apexchart>
+      ></VueApexCharts>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  layout: 'dashboard'
-})
+import VueApexCharts from 'vue3-apexcharts'
+
+definePageMeta({ layout: 'custom' })
 
 const metrics: { count: number; title: string }[] = [
   {
