@@ -16,41 +16,40 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-0.5">
     <div class="chart-bar">
       <p class="chart-title">Bar Chart</p>
-      <VueApexCharts
+      <apexchart
         type="bar"
         :options="barChartOptions"
         :series="barChartSeries"
-      ></VueApexCharts>
+      ></apexchart>
     </div>
     <div class="chart-bar">
       <p class="chart-title">Area Chart</p>
-      <VueApexCharts
+      <apexchart
         type="area"
         :options="areaChartOptions"
         :series="areaChartSeries"
-      ></VueApexCharts>
+      ></apexchart>
     </div>
     <div class="chart-bar">
       <p class="chart-title">Polar Chart</p>
-      <VueApexCharts
+      <apexchart
         type="polarArea"
         :options="polarChartOptions"
         :series="polarChartSeries"
-      ></VueApexCharts>
+      ></apexchart>
     </div>
     <div class="chart-bar">
       <p class="chart-title">Radial Chart</p>
-      <VueApexCharts
+      <apexchart
         type="radialBar"
         :options="radialOptions"
         :series="radialSeries"
-      ></VueApexCharts>
+      ></apexchart>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import VueApexCharts from 'vue3-apexcharts'
 
 definePageMeta({ layout: 'custom' })
 

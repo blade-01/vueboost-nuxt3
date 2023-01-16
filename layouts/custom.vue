@@ -5,7 +5,8 @@
       <div class="relative">
         <NavbarTheTopbar @toggle-sidebar="toggleSidebar" />
         <div class="p-4">
-          <slot></slot>
+          <NuxtLoadingIndicator />
+          <NuxtPage />
         </div>
       </div>
     </main>

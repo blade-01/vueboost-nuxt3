@@ -53,7 +53,7 @@
         @blur="v$.gender.$touch()"
         @focus="v$.gender.$reset()"
       />
-      <ReusablesBasePhone
+      <!-- <ReusablesBasePhone
         class="md:col-span-2"
         v-model="state.phoneNumber"
         label="Phone Number"
@@ -62,7 +62,7 @@
         @blur="v$.phoneNumber.$touch()"
         @focus="v$.phoneNumber.$reset()"
         @handle-validation="handleValidation"
-      />
+      /> -->
       <ReusablesBaseTextarea
         class="md:col-span-2"
         v-model="state.message"
@@ -108,7 +108,7 @@ const state = reactive<{
   image: string
   message: string
   gender: string
-  phoneNumber: string | number
+  // phoneNumber: string | number
   editor: string
 }>({
   username: '',
@@ -118,7 +118,7 @@ const state = reactive<{
   image: '',
   message: '',
   gender: '',
-  phoneNumber: '',
+  // phoneNumber: '',
   editor: ''
 })
 
@@ -137,11 +137,11 @@ const rules = {
   image: { required },
   message: { required },
   gender: { required },
-  phoneNumber: {
-    required,
-    minLength: minLength(8),
-    maxLength: maxLength(11)
-  },
+  // phoneNumber: {
+  //   required,
+  //   minLength: minLength(8),
+  //   maxLength: maxLength(11)
+  // },
   editor: { required }
 }
 const v$ = useVuelidate(rules, state)

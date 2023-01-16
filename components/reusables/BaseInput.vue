@@ -16,12 +16,11 @@
       <span
         v-if="password"
         class="mdi absolute top-1/2 -translate-y-1/2 right-4 cursor-pointer"
-        :class="[
-          type === 'password' ? 'mdi-eye' : 'mdi-eye-off',
-          { 'err-message': error }
-        ]"
         @click="$emit('changeType')"
-      ></span>
+      >
+        <Icon name="mdi:eye" v-if="type === 'password'" />
+        <Icon name="mdi:eye-off" v-else />
+      </span>
     </div>
     <small
       :class="{ 'err-message': error }"

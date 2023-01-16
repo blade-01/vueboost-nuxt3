@@ -123,6 +123,10 @@
     @apply capitalize;
   }
 
+  .v-style .vs__selected {
+    @apply dark:text-primary;
+  }
+
   .v-style .vs__dropdown-menu {
     @apply bg-white dark:bg-darkBg;
   }
