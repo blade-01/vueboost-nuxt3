@@ -1,18 +1,20 @@
 <template>
   <div class="input-field">
     <label class="label-style" :for="label" v-if="label">{{ label }}</label>
-    <QuillEditor
-      ref="quill"
-      :id="label"
-      theme="snow"
-      toolbar="full"
-      :placeholder="`'${placeholder}'`"
-      v-model:content="content"
-      contentType="html"
-      :readOnly="readOnly"
-      style="height: 200px"
-      :class="{ err: error }"
-    />
+    <ClientOnly>
+      <QuillEditor
+        ref="quill"
+        :id="label"
+        theme="snow"
+        toolbar="full"
+        :placeholder="`'${placeholder}'`"
+        v-model:content="content"
+        contentType="html"
+        :readOnly="readOnly"
+        style="height: 200px"
+        :class="{ err: error }"
+      />
+    </ClientOnly>
     <small
       :class="{ 'err-message': error }"
       v-if="error && errorMessage"
@@ -31,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import '@vueup/vue-quill/dist/vue-quill.snow.css'
 interface Props {
   modelValue: string | number
   label?: string
@@ -73,6 +76,10 @@ watch(
 
 <style scoped>
 :deep(.ql-tooltip) {
-  display: none;
+  @apply hidden;
+}
+
+:deep(.ql-editor p) {
+  @apply text-base;
 }
 </style>
