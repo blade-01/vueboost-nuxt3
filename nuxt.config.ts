@@ -22,45 +22,18 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     }
   },
-  css: ['~/assets/css/tailwind.css'],
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     'nuxt-icon',
     '@nuxtjs/i18n',
     '@pinia/nuxt',
-    '@nuxt/image-edge',
-    '@kevinmarrec/nuxt-pwa'
+    '@nuxt/image-edge'
   ],
-  // PWA
-  pwa: {
-    manifest: {
-      name: 'Vue Boost + Nuxt 3',
-      short_name: 'VueBoost + Nuxt 3',
-      description:
-        'Boost your productivity with Vue Boost - work smarter, not harder.',
-      theme_color: '#1e1e2e',
-      lang: 'en',
-      icons: [
-        {
-          src: '/pwa-192x192.png',
-          type: 'image/png',
-          sizes: '192x192',
-          purpose: 'any'
-        },
-        {
-          src: '/pwa-512x512.png',
-          type: 'image/png',
-          sizes: '512x512',
-          purpose: 'any'
-        },
-        {
-          src: '/pwa-512x512.png',
-          type: 'image/png',
-          sizes: '512x512',
-          purpose: 'maskable'
-        }
-      ]
+  // External Image Provider
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/bladencove/image/upload/RC'
     }
   },
   // Internationalization options

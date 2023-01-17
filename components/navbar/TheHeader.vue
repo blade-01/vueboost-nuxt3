@@ -1,26 +1,28 @@
 <template>
   <header class="flex flex-col justify-center items-center text-center">
     <div class="flex justify-between gap-x-8 items-center text-center">
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center gap-2">
         <nuxt-img src="/nuxt.png" fit="contain" height="80" width="80" />
         <p class="text-base font-medium">Nuxt 3</p>
       </div>
       <Icon name="mdi:plus" size="40" />
-      <div class="flex flex-col items-center">
-        <img
-          src="
-          https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w_gdg5d5.svg
-        "
+      <div class="flex flex-col items-center gap-2">
+        <nuxt-img
+          provider="cloudinary"
+          src="/vueboost_w.svg"
           alt="logo"
-          class="w-[80px] h-[80px] object-contain"
+          fit="inside"
+          height="80"
+          width="80"
           v-if="$colorMode.value === 'dark'"
         />
-        <img
-          src="
-          https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg
-        "
+        <nuxt-img
+          provider="cloudinary"
+          src="/vueboost.svg"
           alt="logo"
-          class="w-[80px] h-[80px] object-contain"
+          fit="inside"
+          height="80"
+          width="80"
           v-else
         />
         <p class="text-base font-medium">Vue Boost</p>

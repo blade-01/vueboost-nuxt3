@@ -5,21 +5,23 @@
         class="sticky-top bg-gray-100 dark:bg-darkBgSec w-full h-[60px] shadow-sm p-4 flex justify-between items-center"
       >
         <NuxtLink to="/">
-          <img
-            src="
-              https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w_gdg5d5.svg
-            "
+          <nuxt-img
+            provider="cloudinary"
+            src="/vueboost_w.svg"
             alt="logo"
-            class="w-[50px] object-contain"
+            fit="inside"
+            height="50"
+            width="50"
             v-if="$colorMode.value === 'dark'"
           />
-          <img
-            v-else
-            src="
-              https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg
-            "
+          <nuxt-img
+            provider="cloudinary"
+            src="/vueboost.svg"
             alt="logo"
-            class="w-[50px] object-contain"
+            fit="inside"
+            height="50"
+            width="50"
+            v-else
           />
         </NuxtLink>
       </div>
