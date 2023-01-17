@@ -1,10 +1,10 @@
 <p align='center'>
-  <img src='public/screenshot.png' alt='Boost your productivity with Vue Boost - work smarter, not harder.'/>
+  <img src='public/screenshot.png' alt='Boost your productivity with Vue Boost - work smarter, not harder.' style="border-radius: 10px"/>
 </p>
 <br/>
 
 <p align='center'>
-Boost your productivity with <strong>Nuxt 3 + Vue Boost</strong> - work smarter, not harder.
+Vue Boost for Nuxt 3
 </p>
 
 <br>
@@ -16,7 +16,7 @@ Inspired by <a href="https://github.com/blade-01/vueboost">Vue Boost</a>
 <br>
 
 <p align='center'>
-<a href="https://vueboost-nuxt3.netlify.app/">Live Demo</a>
+<a href="https://vueboost-nuxt3.vercel.app/">Live Demo</a>
 </p>
 
 <br>
@@ -72,7 +72,7 @@ Inspired by <a href="https://github.com/blade-01/vueboost">Vue Boost</a>
   - [Table](/components/reusables/BaseTable.vue) - Data table component
   - [Table Action](/components/reusables/BaseTableAction.vue) - Table Action component (view, edit and delete)
 - [Samples Folder](/components/samples/)
-  - You can find out how to use these components in the [Samples](/components/samples/) folder or visit [Vue Boost Dashboard](https://vueboost-nuxt3.netlify.app/dashboard) for the visualization
+  - You can find out how to use these components in the [Samples](/components/samples/) folder or visit [Vue Boost Dashboard](https://vueboost-nuxt3.vercel.app/dashboard) for the visualization
 
 ### Nuxt Modules
 
