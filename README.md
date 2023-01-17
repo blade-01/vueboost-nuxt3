@@ -16,7 +16,7 @@ Inspired by <a href="https://github.com/blade-01/vueboost">Vue Boost</a>
 <br>
 
 <p align='center'>
-<a href="https://vueboostnuxt.netlify.app/">Live Demo</a>
+<a href="https://vueboost-nuxt3.netlify.app/">Live Demo</a>
 </p>
 
 <br>
@@ -72,7 +72,7 @@ Inspired by <a href="https://github.com/blade-01/vueboost">Vue Boost</a>
   - [Table](/components/reusables/BaseTable.vue) - Data table component
   - [Table Action](/components/reusables/BaseTableAction.vue) - Table Action component (view, edit and delete)
 - [Samples Folder](/components/samples/)
-  - You can find out how to use these components in the [Samples](/components/samples/) folder or visit [Vue Boost Dashboard](https://vueboostnuxt.netlify.app/dashboard) for the visualization
+  - You can find out how to use these components in the [Samples](/components/samples/) folder or visit [Vue Boost Dashboard](https://vueboost-nuxt3.netlify.app/dashboard) for the visualization
 
 ### Nuxt Modules
 
@@ -98,7 +98,6 @@ Inspired by <a href="https://github.com/blade-01/vueboost">Vue Boost</a>
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [VS Code Extensions](./.vscode/extensions.json)
-  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
   - [Tailwind IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Icon inline display and autocomplete
