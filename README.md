@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='public/screenshot.png' alt='Boost your productivity with Vue Boost - work smarter, not harder.'/>
+  <img src='static/screenshot.png' alt='Boost your productivity with Vue Boost - work smarter, not harder.'/>
 </p>
 <br/>
 
